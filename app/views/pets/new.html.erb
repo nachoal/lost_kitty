@@ -1,0 +1,13 @@
+<h1>Create a new pet 🐶</h1>
+<%= form_for(@pet) do |form|  %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :found %>
+  <%= form.check_box :found %>
+
+  <%= form.label :address %>
+  <%= form.text_field :address %>
+
+  <%= form.submit %>
+<% end %>

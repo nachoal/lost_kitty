@@ -1,0 +1,7 @@
+<h1><%= @pet.name %></h1>
+name: <%= @pet.name  %> <br>
+found at: <%= @pet.address %> <br>
+found? <%= @pet.found  %> 
+
+destroy your pet :( 
+<%= link_to 'delete pet from the db', pet_destroy_path, method: :delete  %>
